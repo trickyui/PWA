@@ -17,16 +17,11 @@ function scrollToMain(e) {
 }
 
 
-if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () {
+if("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
         navigator.serviceWorker
-            .getRegistration("/serviceWorker.js", {
-                scope: './'
-            })
-            .then(function (registrations) {
-                for (let registration of registrations) {
-                    registration.unregister()
-                }
-            })
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service workder not registered", err))
     })
 }
