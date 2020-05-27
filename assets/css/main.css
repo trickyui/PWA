@@ -956,7 +956,7 @@ button.style2,
 	-ms-justify-content: center;
 	justify-content: center;
 	padding: 8em 4em 6em 4em;
-	min-height: 100vh;
+	height: 100vh;
 	background-image: url("../../images/banner.jpg");
 	background-position: center;
 	background-size: cover;
@@ -1081,13 +1081,7 @@ button.style2,
 }
 
 
-@media screen and (max-width: 980px) {
 
-	#banner br {
-		display: none;
-	}
-
-}
 
 @media screen and (max-width: 736px) {
 
