@@ -5,6 +5,10 @@
 	<title>TrickyUI</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="manifest" href="manifest.json">
+	<link rel="apple-touch-icon" href="images/icon-96x96.png" />
+	<meta name="apple-mobile-web-app-status-bar" content="#03141c" />
+	<meta name="theme-color" content="#03141c" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -106,27 +110,7 @@
 			<p class="copyright">&copy; TrickyUI - Tricks in a box!</p>
 		</div>
 	</footer>
-
-	<script>
-		const body = document.querySelector('body');
-		body.classList.add('is-loading');
-
-		function loadWindow() {
-			window.setTimeout(function () {
-				body.classList.remove('is-loading');
-			}, 100);
-		}
-		loadWindow();
-
-
-		function scrollToMain(e) {
-			let main = document.getElementById('main');
-			main.scrollIntoView({
-				behavior: "smooth"
-			});
-		}
-	</script>
-
+	<script src="app.js"></script>
 </body>
 
 </html>

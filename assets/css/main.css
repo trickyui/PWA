@@ -1031,7 +1031,7 @@ button.style2,
 }
 
 #banner .more {
-	background-image: url("images/arrow.svg");
+	background-image: url("../../images/arrow.svg");
 	background-position: center 1.35em;
 	background-repeat: no-repeat;
 	background-size: auto;

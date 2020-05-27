@@ -1,0 +1,15 @@
+{
+    "name": "TrickyUI",
+    "short_name": "TrickyUI",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#06212d",
+    "theme_color": "#03141c",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+          "src": "/images/icon-96x96.png",
+          "type": "image/png", "sizes": "96x96"
+        }
+    ]
+}
