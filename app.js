@@ -20,7 +20,7 @@ function scrollToMain(e) {
 if("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
         navigator.serviceWorker
-        .register("/serviceWorker.js")
+        .register("/serviceWorker.js", {scope: './'})
         .then(res => console.log("service worker registered"))
         .catch(err => console.log("service workder not registered", err))
     })
