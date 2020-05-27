@@ -1080,13 +1080,6 @@ button.style2,
 	-o-transition: opacity 3s ease;
 }
 
-@media screen and (max-width: 1280px) {
-
-	#banner video {
-		display: none;
-	}
-
-}
 
 @media screen and (max-width: 980px) {
 
@@ -1099,7 +1092,7 @@ button.style2,
 @media screen and (max-width: 736px) {
 
 	#banner {
-		min-height: 0;
+		/* min-height: 0; */
 		padding: 6em 2em 10em 2em;
 	}
 
